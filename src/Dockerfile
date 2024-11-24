@@ -3,7 +3,7 @@ MAINTAINER tess@ten7.com
 
 # Update the package list and install Ansible.
 RUN apk -U upgrade &&\
-    apk add --update --no-cache ansible-core && \
+    apk add --update --no-cache ansible-core git && \
     rm -rf /tmp/* \
            /var/cache/apk/*
 
